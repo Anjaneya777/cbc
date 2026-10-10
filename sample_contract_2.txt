@@ -1,0 +1,36 @@
+STANDARD VENDOR AGREEMENT
+
+This Vendor Agreement ("Agreement") is entered into as of November 1, 2026, by and between CloudMatrix Technologies ("Vendor") and Apex Global Solutions Inc. ("Buyer").
+
+SECTION 1. DELIVERABLES AND SERVICES
+1.1 Software Subscriptions. Vendor shall grant Buyer access to its SaaS platform pursuant to standard service level commitments.
+1.2 Support. Vendor will provide standard technical support during normal business hours.
+
+SECTION 2. COMMERCIAL TERMS AND INVOICING
+2.1 Payment Terms. Buyer shall remit all undisputed invoice payments within Net 30 days of receipt.
+2.2 Reimbursable Costs. Pre-approved travel and out-of-pocket expenses shall be billed at cost without markup.
+2.3 No Unreasonable Penalties. Neither party shall be assessed punitive fees or late charges exceeding 1.0% per month on delinquent sums.
+
+SECTION 3. TERM AND TERMINATION
+3.1 Fixed Term. This Agreement shall have a fixed term of twelve (12) months from the Effective Date. There shall be no automatic renewal; any extension requires a written mutual amendment.
+3.2 Termination for Cause. Either party may terminate upon thirty (30) days' written notice if the other party commits a material breach.
+3.3 Termination for Convenience. Either party may terminate this agreement without cause upon sixty (60) days' prior written notice.
+
+SECTION 4. INTELLECTUAL PROPERTY RIGHTS
+4.1 Customer Ownership. Buyer retains all ownership rights in Customer Data.
+4.2 Platform Ownership. Vendor retains all ownership in its pre-existing SaaS software and architecture.
+
+SECTION 5. CONFIDENTIALITY AND DATA PRIVACY
+5.1 Protection Period. Each party agrees to protect confidential information with reasonable care for a period of three (3) years following disclosure.
+5.2 Data Privacy. Vendor shall process all personal data strictly in accordance with GDPR and applicable state privacy laws.
+
+SECTION 6. MUTUAL LIMITATION OF LIABILITY
+6.1 Aggregate Cap. Except for gross negligence or willful misconduct, each party's aggregate liability under this Agreement shall be capped at the total fees paid in the preceding twelve (12) months.
+6.2 Exclusion of Consequential Damages. Neither party shall be liable for lost profits or indirect consequential damages.
+
+SECTION 7. MUTUAL INDEMNIFICATION
+7.1 Vendor IP Indemnity. Vendor shall defend and indemnify Buyer against third-party claims asserting that the SaaS service infringes a valid patent or copyright.
+7.2 Buyer Indemnity. Buyer shall indemnify Vendor against third-party claims arising from unauthorized data provided by Buyer.
+
+SECTION 8. AUDIT AND INSPECTION
+8.1 Reasonable Notice. Vendor may inspect and audit usage logs upon at least thirty (30) business days' prior written notice during regular business hours.

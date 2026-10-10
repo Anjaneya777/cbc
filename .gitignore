@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+env/
+*.env
+.env.local
+.env.production
+
+# Databases (do NOT push)
+*.db
+*.sqlite
+*.sqlite3
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+.npm
+*.log
+npm-debug.log*
+
+# IDE / OS files
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+.pytest_cache/
+.mypy_cache/
+
+# Test / Coverage
+.coverage
+htmlcov/
+.tox/
+
+# Secrets / Keys
+*.pem
+*.key
+secrets.json

@@ -1,0 +1,246 @@
+[
+  {
+    "id": "rule_term_sole_discretion",
+    "name": "Termination Without Cause or at Sole Discretion",
+    "category": "Termination",
+    "severity": "High",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)(terminate|cancellation).{0,50}(without cause|for convenience|at its sole discretion|in its sole discretion|at any time without reason)",
+      "(?i)(at its sole discretion|in its sole discretion).{0,40}(terminate|cancel|end this agreement)",
+      "(?i)may terminate this agreement.{0,30}without having to state any reason"
+    ],
+    "enabled": true,
+    "explanation": "Allows termination without justifiable cause or at a single party's sole discretion, creating significant operational and commercial instability."
+  },
+  {
+    "id": "rule_short_notice",
+    "name": "Short Notice Period (Under 15 Days)",
+    "category": "Termination",
+    "severity": "High",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)(upon|with|within)\\s+(?:(?:[1-9]|1[0-4])\\s*(?:days'|days|business days|calendar days)|(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen)\\s*(?:days'|days))\\s+(?:prior\\s+)?(?:written\\s+)?notice",
+      "(?i)immediate(?:ly)?\\s+upon\\s+(?:written\\s+)?notice",
+      "(?i)notice\\s+period\\s+of\\s+less\\s+than\\s+15\\s+days"
+    ],
+    "enabled": true,
+    "explanation": "Provides less than 15 days notice for termination, which gives inadequate lead time to mitigate damages, transition duties, or reallocate resources."
+  },
+  {
+    "id": "rule_liquidated_damages",
+    "name": "Liquidated Damages or Severe Penalties",
+    "category": "Penalties",
+    "severity": "High",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)liquidated\\s+damages",
+      "(?i)penalty\\s+of\\s+\\$?[\\d,]+",
+      "(?i)pay\\s+as\\s+(?:a\\s+)?penalty",
+      "(?i)forfeit(?:ure)?\\s+of\\s+(?:all\\s+)?(?:deposits?|fees?|funds?|payments?)"
+    ],
+    "enabled": true,
+    "explanation": "Imposes predetermined liquidated damages or financial penalties that may be disproportionate to actual proven losses."
+  },
+  {
+    "id": "rule_auto_renewal",
+    "name": "Automatic Renewal or Evergreen Clause",
+    "category": "Renewal",
+    "severity": "Medium",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)automatic(?:ally)?\\s+(?:renew|extended|roll(?:s)?\\s+over)",
+      "(?i)shall\\s+renew\\s+automatically",
+      "(?i)evergreen\\s+(?:provision|clause|term)",
+      "(?i)successive\\s+(?:terms|periods)\\s+of\\s+(?:one|two|1|2|3|5)\\s+year"
+    ],
+    "enabled": true,
+    "explanation": "Automatically renews the agreement for additional terms unless opt-out notice is given within a strict window, risking unintentional lock-in."
+  },
+  {
+    "id": "rule_unlimited_liability",
+    "name": "Unlimited Liability or Exclusion of Liability Caps",
+    "category": "Liability",
+    "severity": "High",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)without\\s+(?:any\\s+)?limitation\\s+of\\s+liability",
+      "(?i)no\\s+(?:limit|cap)\\s+on\\s+(?:damages|liability)",
+      "(?i)unlimited\\s+liability",
+      "(?i)notwithstanding\\s+anything\\s+to\\s+the\\s+contrary.{0,40}(?:liability\\s+shall\\s+not\\s+be\\s+limited|shall\\s+be\\s+unlimited)",
+      "(?i)shall\\s+be\\s+liable\\s+for\\s+all\\s+consequential(?:,|\\s+and|\\s+or)?\\s+punitive\\s+damages"
+    ],
+    "enabled": true,
+    "explanation": "Exposes the party to uncapped financial liability, excluding standard industry limits or liability caps."
+  },
+  {
+    "id": "rule_broad_indemnity",
+    "name": "Broad Indemnity ('Any and All Claims')",
+    "category": "Indemnity",
+    "severity": "High",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)(?:indemnify|hold\\s+harmless|defend).{0,50}(?:any\\s+and\\s+all|all\\s+manner\\s+of)\\s+claims",
+      "(?i)(?:indemnify|hold\\s+harmless).{0,40}(?:regardless\\s+of\\s+(?:fault|negligence|cause))",
+      "(?i)defend,\\s+indemnify,\\s+and\\s+hold\\s+harmless.{0,50}(?:officers|agents|affiliates).{0,30}against\\s+any\\s+and\\s+all"
+    ],
+    "enabled": true,
+    "explanation": "Requires sweeping defense and indemnification for 'any and all' claims, including claims stemming from third parties or non-negligent acts."
+  },
+  {
+    "id": "rule_unilateral_amendment",
+    "name": "Unilateral Amendment or Modification",
+    "category": "Unilateral changes",
+    "severity": "High",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)reserves\\s+the\\s+right\\s+to\\s+(?:modify|amend|alter|change|update).{0,30}(?:terms|agreement|policies|fees).{0,30}(?:at\\s+any\\s+time|without\\s+(?:prior\\s+)?notice|in\\s+its\\s+sole\\s+discretion)",
+      "(?i)may\\s+update\\s+these\\s+terms\\s+from\\s+time\\s+to\\s+time\\s+without\\s+(?:prior\\s+)?notice",
+      "(?i)unilateral(?:ly)?\\s+(?:modify|alter|amend)"
+    ],
+    "enabled": true,
+    "explanation": "Grants one party sole discretion to alter contractual terms, service scopes, or pricing without mutual written agreement."
+  },
+  {
+    "id": "rule_non_compete",
+    "name": "Non-Compete or Exclusivity Restriction",
+    "category": "Non-compete/Exclusivity",
+    "severity": "High",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)shall\\s+not\\s+(?:directly\\s+or\\s+indirectly\\s+)?compete\\s+with",
+      "(?i)covenant\\s+not\\s+to\\s+compete",
+      "(?i)exclusive\\s+(?:dealing|provider|basis|partnership).{0,40}(?:shall\\s+not\\s+(?:engage|provide|offer))",
+      "(?i)prohibited\\s+from\\s+(?:engaging\\s+in|soliciting).{0,30}competitive\\s+business"
+    ],
+    "enabled": true,
+    "explanation": "Restricts engaging in competitive business, marketing to other clients, or operating freely in the designated market."
+  },
+  {
+    "id": "rule_ip_assignment",
+    "name": "Broad IP Assignment of All Work Product & Moral Rights",
+    "category": "IP",
+    "severity": "High",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)(?:irrevocably\\s+assigns?|assigns?\\s+(?:all\\s+right,\\s+title,\\s+and\\s+interest|irrevocably)).{0,50}(?:work\\s+product|inventions?|intellectual\\s+property|developments?)",
+      "(?i)waives?\\s+(?:all\\s+)?moral\\s+rights",
+      "(?i)work\\s+made\\s+for\\s+hire",
+      "(?i)sole\\s+and\\s+exclusive\\s+property\\s+of.{0,40}(?:including\\s+all\\s+pre-existing|background\\s+technology)"
+    ],
+    "enabled": true,
+    "explanation": "Forces broad, irrevocable transfer of intellectual property, including potential capture of background tools or pre-existing methodologies."
+  },
+  {
+    "id": "rule_non_refundable_fees",
+    "name": "Non-Refundable Fees or Advance Payment Forfeiture",
+    "category": "Payment",
+    "severity": "Medium",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)(?:fees?|payments?|deposits?).{0,30}(?:strictly\\s+)?non-refundable",
+      "(?i)under\\s+no\\s+circumstances\\s+shall.{0,30}be\\s+refunded",
+      "(?i)no\\s+refunds?\\s+shall\\s+be\\s+(?:issued|provided|granted)"
+    ],
+    "enabled": true,
+    "explanation": "Bars any refund of fees or deposits, even if performance is delayed, disputed, or unilaterally terminated."
+  },
+  {
+    "id": "rule_extended_payment_terms",
+    "name": "Payment Terms Over 60 Days",
+    "category": "Payment",
+    "severity": "Medium",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)(?:net|payable\\s+within)\\s+(?:6[1-9]|[7-9]\\d|1[0-2]\\d)\\s+days",
+      "(?i)payment\\s+terms\\s+of\\s+(?:75|90|120)\\s+days",
+      "(?i)within\\s+(?:75|90|120)\\s+calendar\\s+days\\s+of\\s+invoice"
+    ],
+    "enabled": true,
+    "explanation": "Extends payment settlement beyond 60 days (e.g. Net 75, Net 90, Net 120), negatively impacting liquidity and working capital."
+  },
+  {
+    "id": "rule_perpetual_confidentiality",
+    "name": "Perpetual Confidentiality or Indefinite Survival",
+    "category": "Confidentiality",
+    "severity": "Medium",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)confidentiality\\s+obligations?.{0,40}(?:in\\s+perpetuity|shall\\s+survive\\s+indefinitely|perpetual)",
+      "(?i)shall\\s+remain\\s+confidential\\s+in\\s+perpetuity",
+      "(?i)survive\\s+termination.{0,30}for\\s+an\\s+indefinite\\s+period"
+    ],
+    "enabled": true,
+    "explanation": "Enforces non-disclosure and trade secret restrictions forever without a reasonable sunset duration (typically 3 to 5 years)."
+  },
+  {
+    "id": "rule_onesided_jurisdiction",
+    "name": "One-Sided Jurisdiction or Foreign Arbitration",
+    "category": "Governing law/Disputes",
+    "severity": "Medium",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)exclusive\\s+jurisdiction\\s+of\\s+the\\s+courts\\s+of\\s+(?:the\\s+Cayman\\s+Islands|Bermuda|Delaware|Hong\\s+Kong|Singapore|London)",
+      "(?i)submits?\\s+to\\s+the\\s+sole\\s+and\\s+exclusive\\s+jurisdiction",
+      "(?i)mandatory\\s+binding\\s+arbitration\\s+conducted\\s+solely\\s+in"
+    ],
+    "enabled": true,
+    "explanation": "Subjects any litigation or dispute resolution to an inconvenient or disadvantageous forum, raising costs for enforcement."
+  },
+  {
+    "id": "rule_jury_waiver",
+    "name": "Waiver of Jury Trial or Class Action Waiver",
+    "category": "Governing law/Disputes",
+    "severity": "Medium",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)waives?\\s+(?:any\\s+and\\s+all\\s+right\\s+to\\s+a\\s+)?jury\\s+trial",
+      "(?i)waiver\\s+of\\s+jury\\s+trial",
+      "(?i)waive\\s+any\\s+right\\s+to\\s+participate\\s+in\\s+a\\s+class\\s+action"
+    ],
+    "enabled": true,
+    "explanation": "Requires giving up constitutional trial by jury or participating in consolidated class arbitration proceedings."
+  },
+  {
+    "id": "rule_data_waiver",
+    "name": "Unrestricted Data Processing or Broad Privacy Waiver",
+    "category": "Data/Privacy",
+    "severity": "Medium",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)right\\s+to\\s+(?:monetize|sell|transfer|commercialize).{0,30}(?:customer\\s+data|user\\s+data|personal\\s+information)",
+      "(?i)unrestricted\\s+license\\s+to\\s+use,\\s+disclose,\\s+and\\s+exploit.{0,30}data",
+      "(?i)waives\\s+all\\s+privacy\\s+claims\\s+and\\s+statutory\\s+rights"
+    ],
+    "enabled": true,
+    "explanation": "Grants rights to exploit, share, or monetize sensitive personal or operational data without explicit privacy compliance boundaries."
+  },
+  {
+    "id": "rule_late_interest_penalty",
+    "name": "Excessive Late Payment Interest (> 1.5% Monthly or Compounding)",
+    "category": "Penalties",
+    "severity": "Medium",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)interest\\s+(?:rate\\s+)?of\\s+(?:[2-9]|1\\.[6-9]|\\d{2})%\\s+per\\s+month",
+      "(?i)compounded\\s+(?:daily|monthly)\\s+penalty",
+      "(?i)late\\s+charge\\s+of\\s+(?:1[5-9]|[2-9]\\d)%\\s+per\\s+annum"
+    ],
+    "enabled": true,
+    "explanation": "Imposes compounding interest or monthly late finance charges exceeding customary commercial limits."
+  },
+  {
+    "id": "rule_audit_on_demand",
+    "name": "Unreasonable Audit on Demand Without Prior Notice",
+    "category": "Unilateral changes",
+    "severity": "Low",
+    "pattern_type": "regex",
+    "patterns": [
+      "(?i)inspect\\s+and\\s+audit.{0,40}at\\s+any\\s+time\\s+without\\s+(?:prior\\s+)?notice",
+      "(?i)unannounced\\s+inspections?\\s+and\\s+audits",
+      "(?i)immediate\\s+unrestricted\\s+access\\s+to\\s+(?:premises|facilities|books\\s+and\\s+records)"
+    ],
+    "enabled": true,
+    "explanation": "Allows disruptive unannounced inspections or operational audits without reasonable business-hour notice."
+  }
+]

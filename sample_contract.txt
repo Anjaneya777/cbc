@@ -1,0 +1,74 @@
+MASTER SERVICES AGREEMENT
+
+This Master Services Agreement ("Agreement") is entered into as of October 10, 2026 ("Effective Date"), by and between Apex Global Solutions Inc. ("Company"), and Zenith Digital Enterprise LLC ("Client").
+
+WHEREAS, Company provides cloud enterprise consulting services, and Client desires to retain Company to perform such services;
+
+NOW, THEREFORE, the parties hereto agree as follows:
+
+SECTION 1. SCOPE OF SERVICES
+1.1 Services. Company will provide software engineering and architecture consulting as specified in Statements of Work executed by the parties.
+1.2 Standard of Performance. Company will perform the Services in a professional and workmanlike manner.
+
+SECTION 2. PAYMENT TERMS AND COMPENSATION
+2.1 Fees. Client agrees to pay Company the service fees specified in each Statement of Work.
+2.2 Non-Refundable Retainer. All setup fees, advance deposits, and monthly platform retainer fees paid hereunder are strictly non-refundable under all circumstances, even if services are terminated prematurely.
+2.3 Payment Schedule. All invoices submitted by Company shall be payable within Net 90 days of invoice receipt, subject to a late charge of 24% per annum compounded monthly on any past-due balance.
+
+SECTION 3. TERM AND AUTOMATIC RENEWAL
+3.1 Initial Term. The initial term of this Agreement shall commence on the Effective Date and continue for a period of one (1) year.
+3.2 Evergreen Renewal. Upon expiration of the initial term, this Agreement shall automatically renew for successive terms of one (1) year each, unless Client provides written notice of non-renewal at least 180 days prior to the expiration of the then-current term.
+
+SECTION 4. TERMINATION AND DEFAULT
+4.1 Termination for Convenience. Company may terminate this Agreement without cause and at its sole discretion upon 5 days' written notice to Client.
+4.2 Termination for Breach. Either party may terminate if the other party breaches a material obligation and fails to cure within thirty (30) days.
+4.3 Liquidated Damages. If Client terminates this Agreement prior to the expiration of any active term, Client shall immediately forfeit all deposits and pay liquidated damages of $75,000 to Company as an agreed estimation of administrative and capacity loss.
+
+SECTION 5. INTELLECTUAL PROPERTY AND WORK PRODUCT
+5.1 Assignment of Inventions. Client irrevocably assigns all right, title, and interest in and to all work product, developments, inventions, and deliverables created under this Agreement, and waives all moral rights therein, to Company.
+5.2 Pre-existing IP. Company shall retain sole and exclusive property of all software tools, background code, and methodologies utilized during performance.
+
+SECTION 6. CONFIDENTIALITY
+6.1 Confidential Information. Each party agrees to safeguard proprietary technical and business data disclosed by the other party.
+6.2 Perpetual Survival. Notwithstanding anything to the contrary hereinbefore stated, recipient's confidentiality obligations under this Section shall survive termination in perpetuity without limitation of time.
+
+SECTION 7. NON-COMPETE AND EXCLUSIVITY
+7.1 Restrictive Covenant. During the term and for a period of twenty-four (24) months following termination, Client shall not directly or indirectly compete with Company or solicit any employee, contractor, or active customer of Company.
+
+SECTION 8. COMPLIANCE WITH DATA POLICIES
+8.1 Standard of Notification. Each party shall promptly notify the other party in writing within forty-eight hours of becoming aware of any formal regulatory inquiry, security event, or data discrepancy affecting the integrity of the services.
+
+SECTION 9. INDEMNIFICATION
+9.1 Client Indemnity. Client shall defend, indemnify, and hold harmless Company, its officers, directors, and agents against any and all claims, liabilities, lawsuits, and damages arising out of or related to the Services, regardless of fault or negligence.
+
+SECTION 10. UNLIMITED LIABILITY AND DISCLAIMERS
+10.1 Unlimited Liability. Notwithstanding anything to the contrary in this Agreement, Company's damages against Client shall be without any limitation of liability, and Client shall be liable for all consequential, special, and punitive damages.
+
+SECTION 11. UNILATERAL AMENDMENT AND MODIFICATION
+11.1 Right to Amend. Company reserves the right to modify, amend, or alter these terms, service levels, and fee schedules at any time in its sole discretion upon posting updated terms to its portal.
+
+SECTION 12. DATA RIGHTS AND COMMERCIALIZATION
+12.1 License to Data. Client hereby grants Company an unrestricted license to use, disclose, monetize, and commercialize all customer data, transaction logs, and operational telemetry derived from the services.
+
+SECTION 13. GOVERNING LAW AND JURISDICTION
+13.1 Choice of Law. This Agreement shall be governed by and construed in accordance with the laws of the Cayman Islands.
+13.2 Exclusive Forum. The parties submit to the sole and exclusive jurisdiction of the courts of the Cayman Islands for all disputes.
+13.3 Jury Waiver. Each party hereby knowingly and voluntarily waives any and all right to a jury trial in any proceeding arising out of or related to this Agreement.
+
+SECTION 14. DUPLICATE NOTICE AND DISCLOSURE
+14.1 Standard of Notification. Each party shall promptly notify the other party in writing within forty-eight hours of becoming aware of any formal regulatory inquiry, security event, or data discrepancy affecting the integrity of the services.
+
+SECTION 15. MISCELLANEOUS LEGAL FORMALITIES
+15.1 Legal Interpretation. The provisions herein shall apply mutatis mutandis to all subsequent Statements of Work. Inter alia, time is of the essence in the performance of all financial obligations hereunder.
+
+IN WITNESS WHEREOF, the parties hereto have executed this Agreement as of the date first written above.
+
+APEX GLOBAL SOLUTIONS INC.
+By: _________________________________
+Name: Marcus Vance
+Title: Chief Executive Officer
+
+ZENITH DIGITAL ENTERPRISE LLC
+By: _________________________________
+Name: Elena Rostova
+Title: Managing Director
